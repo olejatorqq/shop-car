@@ -1,10 +1,10 @@
-<html xmlns:th="http://www.thymeleaf.org">
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
-Hello!
+    Salam
 </body>
 </html>

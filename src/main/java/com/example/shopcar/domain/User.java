@@ -1,4 +1,4 @@
-package com.example.shopcar.dto;
+package com.example.shopcar.domain;
 
 import jakarta.persistence.*;
 import lombok.Data;

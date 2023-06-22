@@ -7,10 +7,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping
-public class MainController {
+public class UserController {
     @GetMapping
-    public String User(Model model){
+    public String Home(){
         //model.addAttribute("text", "Hello!!!!");
-        return "hello";
+        return "index";
     }
+
 }
