@@ -2,7 +2,9 @@ package com.example.shopcar.service;
 
 import com.example.shopcar.domain.Car;
 import com.example.shopcar.repository.CarRepository;
+import org.springframework.stereotype.Service;
 
+@Service
 public class CarService {
 
     private final CarRepository carRepository;
