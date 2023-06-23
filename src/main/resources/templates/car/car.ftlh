@@ -12,8 +12,10 @@
             margin-bottom: 20px;
         }
 
-        form {
-            margin-bottom: 10px;
+        nav form {
+
+            margin-right: 10px;
+            vertical-align: top;
         }
 
         label {
@@ -26,6 +28,7 @@
         }
 
         button {
+            display: inline-block;
             margin-top: 10px;
         }
     </style>
@@ -48,9 +51,15 @@
         <button type="submit">Add car</button>
     </form>
 
+    <form action="/car/list" method="get">
+        <button type="submit">Cars list</button>
+    </form>
+
     <form action="/" method="get">
         <button type="submit">Home</button>
     </form>
+
+
 </nav>
 
 </body>

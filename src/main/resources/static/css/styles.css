@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: top;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+button {
+    margin-top: 10px;
+}
