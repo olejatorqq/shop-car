@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import java.util.List;
+
 @Controller
 @RequestMapping("/car")
 public class CarController {
@@ -19,11 +21,18 @@ public class CarController {
 
     @GetMapping("/add")
     public String Car(){
-        return "car";
+        return "car/car";
     }
     @PostMapping("/add")
     public String addCar(Car car){
         carService.addCar(car);
-        return "car";
+        return "car/car";
+    }
+    @GetMapping("/list")
+    public String getAllCars(Model model,
+                             Car car){
+        List<Car> carList = carService.allCars();
+        model.addAttribute("allCars", carList);
+        return "car/carList";
     }
 }

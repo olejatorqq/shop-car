@@ -4,6 +4,8 @@ import com.example.shopcar.domain.Car;
 import com.example.shopcar.repository.CarRepository;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class CarService {
 
@@ -13,8 +15,11 @@ public class CarService {
         this.carRepository = carRepository;
     }
 
-    public boolean addCar(Car car){
+    public void addCar(Car car){
         carRepository.save(car);
-        return true;
+    }
+
+    public List<Car> allCars(){
+        return carRepository.findAll();
     }
 }

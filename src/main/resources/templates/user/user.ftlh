@@ -38,16 +38,29 @@
 
 <nav>
     <form action="/car/add" method="post">
-        <label>Brand:</label>
-        <input type="text" name="brand"><br>
-        <label>Model:</label>
-        <input type="text" name="model"><br>
-        <label>Release year:</label>
-        <input type="number" name="year"><br>
-        <label>Price:</label>
-        <input type="number" name="price"><br>
-        <label>Car number:</label>
-        <input type="text" name="number"><br>
+
+        <label>Name:</label>
+        <input type="text" name="name"><br>
+
+        <label>Surname:</label>
+        <input type="text" name="surname"><br>
+
+        <label>Phone:</label>
+        <input type="text" name="phone"><br>
+
+        <label>Email:</label>
+        <input type="text" name="email"><br>
+
+        <label>Budget:</label>
+        <input type="number" name="budget"><br>
+
+        <label>Car:</label>
+        <select name="car">
+            <#list allCars as car>
+                <option>${car.brand} ${car.model}</option>
+            </#list>
+        </select>
+
         <button type="submit">Add car</button>
     </form>
 
